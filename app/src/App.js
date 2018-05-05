@@ -1,7 +1,7 @@
 import React from 'react'
-import Dragger from './Dragger'
+import Dragger from './component/Dragger'
 
-import './style.css'
+import styles from'./style.css'
 
 
 
@@ -94,7 +94,7 @@ export default class LayoutDemo extends React.Component {
                 </Dragger>
 
                 <div className='bounds' style={{ zIndex: -1, border: ' 1px solid rgba(120, 120, 120, 0.4)', left: 900, top: 200, width: 500, height: 500, position: 'absolute' }}>
-                    <Dragger bounds='parent' >
+                    <Dragger bounds='parent' className='styles'>
                         <div>不能离开框框的范围</div>
                     </Dragger>
                     <Dragger bounds='parent' style={{ left: 200, margin: 10 }} >

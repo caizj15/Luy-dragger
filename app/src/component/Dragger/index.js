@@ -319,6 +319,7 @@ export default class Dragger extends React.Component {
              *  React.Children.only 只允许子元素有一个根节点
              */}
                 {React.cloneElement(React.Children.only(this.props.children), {})}
+                <div>{`${fixedClassName}WrapDragger`} </div>
             </div>
         )
     }
